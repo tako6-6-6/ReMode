@@ -29,7 +29,8 @@
 .menu {
   display: flex;
   align-items: center;
-  gap: 77px;
+  gap: clamp(20px, 5vw, 77px);
+
 }
 
 .koko {
@@ -197,15 +198,15 @@
   background: rgba(75, 49, 105, 1);
 }
 /* =====sectiion 2========= */
-/* .club img {
+.club img {
   width: 100%;
-  height: 1102px;
+  height: 800px;
   display: block;
   object-fit: cover;
-} */
+}
 .club {
   width: 100%;
-  height: 600px;
+  height: 550px;
   display: block;
   object-fit: cover;
   background-color: #eacfdf;
@@ -214,19 +215,19 @@
 .club2 h3 {
   font-size: 96px;
   font-family: "Playfair Display", serif;
-  color: rgb(138, 47, 105);
-  -webkit-text-stroke: 0px rgba(71, 54, 105, 1);
+  color: rgb(227, 202, 218);
+  -webkit-text-stroke: 2px rgba(71, 54, 105, 1);
   margin: 0;
 }
 .club2 p {
   font-size: 48px;
   font-family: "Playfair Display", serif;
-  color: rgb(138, 47, 105);
-  -webkit-text-stroke: 0px rgba(71, 54, 105, 1);
+  color: rgb(227, 202, 218);
+  -webkit-text-stroke: 2px rgba(71, 54, 105, 1);
   margin: 18px 0 0 0;
 }
 .club4 {
-  padding-left: 630px;
+  padding-left: 600px;
 }
 .club2 a {
   border-radius: 50px;
@@ -608,7 +609,7 @@ body {
 .vmore {
   background-color: rgba(255, 137, 179, 1);
   color: #fff;
-  border: 0px;
+  border: none;
   font-size: 20px;
   padding: 8px 32px;
   font-weight: bold;
@@ -617,6 +618,8 @@ body {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
   cursor: pointer;
   transition: background-color 0.5s ease;
+  width: auto;
+  border-radius: 0px;
 }
 .vmore:hover {
   background-color: rgba(253, 239, 239, 1);
@@ -1019,7 +1022,7 @@ body {
 .small_circle h1 {
   font-size: 48px;
   font-weight: bold;
-  font-family: Playfair Display sans-serif;
+  font-family: "Playfair Display", sans-serif;;
   color: #5e2b94;
   margin-top: -20px;
 }
@@ -1036,11 +1039,30 @@ main {
 }
 
 .login-wrapper {
-  background-color: #ffdaed;
+  /* background-color: #e6e3e5;
+  padding: 40px 20px;
+  border-radius: 50px; */
+  width: 250p
+}
+/* --------- */
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  position: absolute;
+  z-index: 10000000;
+  margin-top: -730px;
+  margin-left: 500px;
+}
+
+.login-wrapper {
+  
   padding: 40px 20px;
   border-radius: 50px;
   width: 400px;
   max-width: 100%;
+  margin-top: -90px;
   /* box-shadow:
     0 0 10px 1px rgba(61, 61, 61, 0.19),
     0 0 15px 1px rgba(63, 63, 63, 0.23);
@@ -1057,22 +1079,25 @@ h2 {
 .input-group {
   margin-bottom: 10px;
   position: relative;
+  
 }
 
 .input-group label {
   font-weight: bold;
   font-size: 13px;
+ 
 }
 
 .input-group input {
   margin-top: 2px;
   display: block;
   width: 100%;
-  padding: 10px;
-  border-radius: 4px;
-
-  border: 2px solid #5e2b94;
+  
+  padding: 15px;
+  border-radius: 40px;
+  border: 3px solid rgba(245, 171, 199, 1);
   font-family: inherit;
+  background-color: rgba(249, 201, 219, 0.89);
 }
 
 .input-group i {
@@ -1081,10 +1106,12 @@ h2 {
   right: 10px;
   font-size: 24px;
   visibility: hidden;
+  
 }
 
 .input-group input:focus {
   outline: none;
+  
 }
 
 .input-group.valid input {
@@ -1148,7 +1175,7 @@ button {
   background-color: #5e2b94;
   color: #fff;
   font-size: 15px;
-  border-radius: 4px;
+  border-radius: 40px;
   border: 2px solid #5e2b94;
   cursor: pointer;
   transition: all 0.5s ease-in-out;
@@ -1164,27 +1191,19 @@ button:hover {
   background: transparent;
 }
 
-.success-popup {
-  visibility: hidden;
-  position: fixed;
-  top: 45%;
-  left: 41%;
-  background-color: #fff;
-  padding: 40px 20px;
-  border-radius: 5px;
-  width: 300px;
-  max-width: 100%;
-  box-shadow:
-    0 0 10px 1px rgba(61, 61, 61, 0.19),
-    0 0 15px 1px rgba(63, 63, 63, 0.23);
-  color: green;
-  text-align: center;
-}
 
 .login-wrapper.authenticated .success-popup {
   visibility: visible;
 }
-
+#user-display{
+  margin-top: -100px;
+  margin-left: 40px;
+  margin-bottom: 20px;
+}
+#user-display button {
+  display: block;
+  margin: 20px auto 0 auto;
+}
 /* scrool to top///// */
 #myBtn {
   display: block;
@@ -1315,7 +1334,7 @@ button:hover {
 }
 
 .getInTouch {
-    background-image: url('./pics/getintouch.svg'); 
+    background-image: url('./contact/photoes/Rectangle\ 68.png'); 
     background-size: cover;
     background-position: center;
     width: 400px;
@@ -1368,4 +1387,8 @@ button:hover {
     background-color: rgba(205, 31, 141, 1);
     border: none;
    
+}
+/*  -------------------Api-------------------------- */
+#burgerbar {
+    display: none !important;
 }

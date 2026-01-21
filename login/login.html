@@ -6,7 +6,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="../reset.css">
     <link rel="stylesheet" href="../style.css">
-    <script src="../script.js"></script>
+   <link rel="stylesheet" href="../responsive.css">
 </head>
 <body>
     <header class="headerlol">
@@ -19,23 +19,23 @@
         </a>
         
       </div>
-
+            <button id="burgerbar" style="width: auto;">☰</button>
       <div class="menu">
         <ul class="koko">
           <li><a href="../tailors and designe/Designers.html">Designers</a></li>
           <li><a href="../tailors and designe/Tailors.html">Tailors</a></li>
           <li><a href="../Sellexchange/sell.html">Sell/Exchange</a></li>
           <li><a href="../tailors and designe/Service.html">Service</a></li>
-          <li><a href="./contact.html">Contacts</a></li>
+          <li><a href="../contact/contact.html">Contacts</a></li>
         </ul>
         <div class="login">
           <a href="./login.html">Log In</a>
         </div>
       </div>
     </header>
-    <section>
+    <section class="log2">
         <div class="back">
-            <img src="./photoes/Rectangle 68.png" alt="">
+            <img class="pipo" src="./photoes/Rectangle 68.png" alt="">
         
           <div class="circles">
             
@@ -52,41 +52,30 @@
           </div>
         </div>
       <main>
-        <div class="login-wrapper">
-            <form class="login-form" id="loginForm">
-                <div class="input-group">
+        <div class="login-wrapper" id="login-container">
+            <form class="login-form" id="loginForm" >
+                <div class="input-group" >
                     <label for="user" style="color:#5e2b94;font-size: 18px;">Username</label>
                     <input type="text" id="user" placeholder="Enter your Username">
-                    <i class="fa fa-smile-o"></i>
-                    <i class="fa fa-frown-o"></i>
-                    <p class="validation-text">Error Message</p>
+          
+                  
                 </div>
                 <div class="input-group">
                     <label for="pass" style="color: #5e2b94; font-size: 18px;">Password</label>
                     <input type="password" id="pass" placeholder="Enter your Password">
-                    <i class="fa fa-smile-o"></i>
-                    <i class="fa fa-frown-o"></i>
-                    <p class="validation-text">Error Message</p>
+                    
                 </div>
-                <button>Log In</button>
+                <button id="login-btn">Log In</button>
             </form>
-            <div class="success-popup">
-                <h2>Successful!</h2>
+           
             </div>
         </div>
+       <div id="profile-page" style="display: none;">
+         <div id="user-display"></div>
+         <button onclick="window.location.reload()">Back to Login</button>
+       </div>
     </main>
-    <div class="bubble-animation">
-        <div class="red-bubble bubble"></div>
-        <div class="blue-bubble bubble"></div>
-        <div class="red-bubble bubble"></div>
-        <div class="bubble"></div>
-        <div class="orange-bubble bubble"></div>
-        <div class="red-bubble bubble"></div>
-        <div class="bubble"></div>
-        <div class="red-bubble bubble"></div>
-        <div class="blue-bubble bubble"></div>
-        <div class="orange-bubble bubble"></div>
-    </div>
+  
     </section>
     <footer class="footerlol">
       <div class="footerpink" >
@@ -135,6 +124,7 @@
           <p>All Rights Reserved</p>
         </div>
     </footer>
-     <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+   <button onclick="topFunction()" id="myBtn" title="Go to top"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-move-up-icon lucide-move-up"><path d="M8 6L12 2L16 6"/><path d="M12 2V22"/></svg></button>
+      <script src="../script.js"></script>
 </body>
 </html>

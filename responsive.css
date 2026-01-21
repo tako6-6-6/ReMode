@@ -1,0 +1,1401 @@
+@media (max-width: 1024px){
+    /* .logo1{
+        width: 200px;
+       height: 50px;
+       margin-left: 0px;
+    }
+    .menu{
+        gap: 30px;
+        
+    }
+    .koko{
+         gap: 30px;
+    }
+    .koko a{
+        font-size: 20px;
+    }
+    .login{
+        font-size: 20px;
+         width: 100px;
+        height: 50px;
+  
+    }
+    .logo1 a img{
+      margin-left: 0px;
+    }
+    .menu.active{
+        display: none;
+    }
+    .headerlol{
+        display: flex;
+        flex-direction: row;
+    } */
+             .menu{
+    display: none;
+   }
+   
+  .logo1{
+     width: 300px;
+       height: 120px;
+   }
+   .burger-menu{
+    display: block;
+    position: absolute;
+    right:40px;
+   }
+.menu.active{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 100%; /* Below the header */
+    left: auto;
+    right: 0; /* Add this for full width */
+    width: 200px;
+    background-color: #ffffff; /* White background - change color if needed */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    padding: 20px; /* Add padding */
+    z-index: 1000}
+  #burgerbar {
+        display: block !important;
+        font-size: 24px;
+        background: none;
+        border: none;
+        cursor: pointer;
+        padding: 10px;
+      
+    }
+.menu.active .koko {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    gap: 10px;
+
+   }
+}
+@media (max-width: 768px){
+   .menu{
+    display: none;
+   }
+   
+  .logo1{
+     width: 300px;
+       height: 120px;
+   }
+   .burger-menu{
+    display: block;
+    position: absolute;
+    right:40px;
+   }
+.menu.active{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 100%; /* Below the header */
+    left: auto;
+    right: 0; /* Add this for full width */
+    width: 300px;
+    background-color: #ffffff; /* White background - change color if needed */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    padding: 20px; /* Add padding */
+    z-index: 1000}
+  #burgerbar {
+        display: block !important;
+        font-size: 24px;
+        background: none;
+        border: none;
+        cursor: pointer;
+        padding: 10px;
+      
+    }
+.menu.active .koko {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    gap: 10px;
+
+   }
+   
+    
+}
+@media( max-width:480px){
+       .menu{
+    display: none;
+   }
+   
+  .logo1{
+     width: 300px;
+       height: 120px;
+   }
+   .burger-menu{
+    display: block;
+    position: absolute;
+    right:40px;
+   }
+.menu.active{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 100%; /* Below the header */
+    left: auto;
+    right: 0; /* Add this for full width */
+    width: 200px;
+    background-color: #ffffff; /* White background - change color if needed */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    padding: 20px; /* Add padding */
+    z-index: 1000}
+  #burgerbar {
+        display: block;
+        font-size: 24px;
+        background: none;
+        border: none;
+        cursor: pointer;
+        padding: 10px;
+      
+    }
+.menu.active .koko {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    gap: 10px;
+
+   }
+   
+}
+@media(max-width:320px){
+    .menu{
+    display: none;
+   }
+   
+  .logo1{
+     width: 100px;
+       height: 70px;
+       margin-left: 0px;
+   }
+   .burger-menu{
+    display: block;
+    position: absolute;
+    right:40px;
+   }
+.menu.active{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 100%; 
+    left: auto;
+    right: 0; 
+    width: 200px;
+    background-color: #ffffff; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    padding: 20px; /* Add padding */
+    z-index: 1000}
+  #burgerbar {
+        display: block !important;
+        font-size: 24px;
+        background: none;
+        border: none;
+        cursor: pointer;
+        padding: 10px;
+      
+    }
+.menu.active .koko {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    gap: 10px;
+
+   }
+}
+html,
+body {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+@media (max-width: 1024px) {
+  .tailorboxes {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    padding: 20px;
+  }
+
+  .mircrudiv,
+  .edludiv {
+    display: contents;
+  }
+
+  .miranda,
+  .cruela,
+  .edward,
+  .luna {
+    display: flex;
+    width: 460px;
+    height: 280px;
+    border: 3px solid rgba(128, 49, 119, 1);
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  }
+
+  .tailorpics {
+    width: 40%;
+    height: 100% !important;
+    object-fit: cover;
+  }
+
+  .sideOfbox,
+  .sideOfbox2,
+  .sideOfbox3 {
+    width: 60%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 10px;
+  }
+
+  .mailbox,
+  .phonebox,
+  .mailbox2,
+  .phonebox2,
+  .mailbox3,
+  .phonebox3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    width: 100%;
+    margin: 0;
+  }
+
+  .mailbox h5,
+  .phonebox h5,
+  .mailbox2 h5,
+  .phonebox2 h5,
+  .mailbox3 h5,
+  .phonebox3 h5 {
+    font-size: 13px;
+    margin: 0;
+    min-width: 145px;
+    text-align: right;
+  }
+
+  .mailbox img,
+  .phonebox img,
+  .mailbox2 img,
+  .phonebox2 img,
+  .mailbox3 img,
+  .phonebox3 img {
+    width: 18px;
+    height: 18px;
+  }
+
+  .socialicons,
+  .socialicons2,
+  .socialicons3 {
+    margin: 0 !important;
+    justify-content: center;
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .tailorboxes {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .miranda,
+  .cruela,
+  .edward,
+  .luna {
+    flex-direction: column !important;
+    width: 90%;
+    max-width: 320px;
+    height: auto;
+  }
+
+  .tailorpics {
+    width: 100%;
+    height: auto;
+  }
+
+  .sideOfbox,
+  .sideOfbox2,
+  .sideOfbox3 {
+    width: 100%;
+    padding: 15px 5px;
+    align-items: center;
+    text-align: center;
+  }
+
+  .mailbox,
+  .phonebox,
+  .mailbox2,
+  .phonebox2,
+  .mailbox3,
+  .phonebox3 {
+    justify-content: center !important;
+    width: 100%;
+    margin: 5px 0;
+  }
+
+  .mailbox h5,
+  .phonebox h5,
+  .mailbox2 h5,
+  .phonebox2 h5,
+  .mailbox3 h5,
+  .phonebox3 h5 {
+    font-size: 14px !important;
+    margin-right: 5px;
+    margin-left: 5px;
+  }
+
+  .mailbox img,
+  .phonebox img,
+  .mailbox2 img,
+  .phonebox2 img,
+  .mailbox3 img,
+  .phonebox3 img {
+    width: 18px;
+    height: 18px;
+    margin: 0 5px;
+  }
+
+  .socialicons,
+  .socialicons2,
+  .socialicons3 {
+    margin-left: 0 !important;
+    justify-content: center;
+    width: 100%;
+    margin-top: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .tailorheadings h3 {
+    font-size: 26px;
+  }
+  .tailorheadings h4 {
+    font-size: 16px;
+  }
+
+  .sideOfbox h3,
+  .sideOfbox2 h3,
+  .sideOfbox3 h3 {
+    font-size: 18px;
+  }
+
+  .vmore {
+    font-size: 14px;
+    padding: 5px 15px;
+  }
+
+  .mailbox,
+  .phonebox,
+  .mailbox2,
+  .phonebox2,
+  .mailbox3,
+  .phonebox3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+    margin-bottom: 5px;
+  }
+
+  .mailbox h5,
+  .phonebox h5,
+  .mailbox2 h5,
+  .phonebox2 h5,
+  .mailbox3 h5,
+  .phonebox3 h5 {
+    font-size: 13px;
+    margin: 0;
+    text-align: right;
+    min-width: 155px;
+  }
+
+  .mailbox img,
+  .phonebox img,
+  .mailbox2 img,
+  .phonebox2 img,
+  .mailbox3 img,
+  .phonebox3 img {
+    width: 18px;
+    height: 18px;
+  }
+}
+@media (max-width: 320px) {
+  .tailorboxes {
+    gap: 20px;
+    padding: 10px;
+  }
+  .miranda,
+  .cruela,
+  .edward,
+  .luna {
+    flex-direction: column !important;
+    width: 280px;
+    height: auto;
+    margin: 0 auto;
+  }
+
+  .tailorpics {
+    width: 100% !important;
+    height: 180px !important;
+    object-fit: cover;
+  }
+
+  .sideOfbox,
+  .sideOfbox2,
+  .sideOfbox3 {
+    width: 100% !important;
+    padding: 15px 5px;
+    gap: 10px;
+  }
+
+  .sideOfbox h3,
+  .sideOfbox2 h3,
+  .sideOfbox3 h3 {
+    font-size: 18px;
+    margin-bottom: 5px;
+  }
+
+  .vmore {
+    font-size: 14px;
+    padding: 6px 20px;
+    margin-bottom: 10px;
+  }
+
+  .mailbox,
+  .phonebox,
+  .mailbox2,
+  .phonebox2,
+  .mailbox3,
+  .phonebox3 {
+    justify-content: center;
+    gap: 5px;
+  }
+
+  .mailbox h5,
+  .phonebox h5,
+  .mailbox2 h5,
+  .phonebox2 h5,
+  .mailbox3 h5,
+  .phonebox3 h5 {
+    font-size: 12px;
+    min-width: 130px;
+    text-align: right;
+  }
+
+  .mailbox img,
+  .phonebox img,
+  .mailbox2 img,
+  .phonebox2 img,
+  .mailbox3 img,
+  .phonebox3 img {
+    width: 16px;
+    height: 16px;
+  }
+
+  .socialicons,
+  .socialicons2,
+  .socialicons3 {
+    margin-left: 0 !important;
+    justify-content: center;
+    gap: 10px;
+    padding-bottom: 10px;
+  }
+}
+
+/* end of tailors responsive */
+
+/* SERVICE */
+@media (max-width: 1024px) {
+  .sssheadings h3 {
+    font-size: 72px;
+  }
+  .sssheadings h5 {
+    font-size: 30px;
+  }
+  .serviceContainers {
+    gap: 30px;
+  }
+  .yourstyle,
+  .uploadiv,
+  .transformdiv {
+    width: 280px;
+  }
+}
+@media (max-width: 786px) {
+  .sssheadings h3 {
+    font-size: 54px;
+  }
+  .sssheadings h5 {
+    font-size: 24px;
+  }
+  .yourstyle,
+  .uploadiv,
+  .transformdiv {
+    width: 90%;
+    height: auto;
+    padding: 30px;
+  }
+}
+@media (max-width: 480px) {
+  .sssheadings h3 {
+    font-size: 40px;
+  }
+  .sssheadings h5 {
+    font-size: 20px;
+  }
+  .yourstyle img,
+  .uploadiv img,
+  .transformdiv img {
+    width: 120px; /* Shrink images for small screens */
+  }
+}
+@media (max-width: 320px) {
+  .sssheadings h3 {
+    font-size: 32px;
+  }
+  .sssheadings h5 {
+    font-size: 18px;
+  }
+  .yourstyle,
+  .uploadiv,
+  .transformdiv {
+    padding: 20px;
+  }
+  .yourstyle h1,
+  .transformdiv h1,
+  .uploadiv h1 {
+    font-size: 18px;
+  }
+}
+/* end of service responsive */
+/* DESIGNERSS */
+
+@media (max-width: 1024px) {
+  .designers {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    justify-content: center !important;
+    gap: 25px !important;
+    padding: 20px !important;
+  }
+  .chanel,
+  .lauren,
+  .prada {
+    width: 340px !important;
+    height: auto !important;
+    min-height: unset !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    text-align: center !important;
+    padding: 20px !important;
+    margin-bottom: 10px !important;
+  }
+
+  .images {
+    width: 100% !important;
+    height: 280px !important;
+    object-fit: cover !important;
+    margin-left: 0 !important;
+    border-radius: 15px !important;
+  }
+
+  .designers h3,
+  .designers h4 {
+    margin-left: 0 !important;
+    width: 100% !important;
+    padding: 0 5px !important;
+  }
+
+  .buttondiv {
+    display: flex !important;
+    justify-content: center !important;
+    margin-left: 0 !important;
+    margin-top: 15px !important;
+    width: 100% !important;
+  }
+  .headings h1 {
+    font-size: 52px !important;
+  }
+  .headings h2 {
+    font-size: 22px !important;
+  }
+}
+@media (max-width: 768px) {
+  .chanel,
+  .lauren,
+  .prada {
+    width: 95% !important;
+    max-width: 374px !important;
+  }
+  .buttondiv {
+    gap: 8px !important;
+  }
+}
+@media (max-width: 480px) {
+  .sssheadings h3 {
+    font-size: 40px;
+  }
+  .sssheadings h5 {
+    font-size: 20px;
+  }
+  .yourstyle img,
+  .uploadiv img,
+  .transformdiv img {
+    width: 120px;
+  }
+  .buttondiv {
+    flex-direction: column !important;
+  }
+}
+@media (max-width: 320px) {
+  .sssheadings h3 {
+    font-size: 32px;
+  }
+  .sssheadings h5 {
+    font-size: 18px;
+  }
+  .yourstyle,
+  .uploadiv,
+  .transformdiv {
+    padding: 20px;
+  }
+  .yourstyle h1,
+  .transformdiv h1,
+  .uploadiv h1 {
+    font-size: 18px;
+  }
+  .buttondiv {
+    flex-direction: column !important;
+    align-items: center !important;
+  }
+}
+/* Get int Touch */
+
+/* Breakpoint: 1024px */
+@media (max-width: 1024px) {
+    .contactheaders h1 {
+        font-size: 64px;
+    }
+
+    .contactheaders h2 {
+        font-size: 28px;
+    }
+
+    .twoFrameConnector {
+        gap: 60px;
+    }
+
+    .registerForm {
+        max-width: 380px;
+        min-height: 480px;
+    }
+
+    .getInTouch {
+        max-width: 380px;
+        min-height: 480px;
+    }
+
+    .form-control label {
+        font-size: 15px;
+    }
+
+    .form-control input {
+        font-size: 13px;
+        padding: 9px;
+    }
+
+    .contact-title {
+        font-size: 36px;
+    }
+
+    .card-label {
+        font-size: 1.2rem;
+    }
+
+    .card-info {
+        font-size: 0.9rem;
+    }
+}
+
+/* Breakpoint: 786px */
+@media (max-width: 786px) {
+    .contactheaders h1 {
+        font-size: 48px;
+    }
+
+    .contactheaders h2 {
+        font-size: 22px;
+    }
+
+    .twoFrameConnector {
+        gap: 40px;
+        padding: 30px 20px;
+    }
+
+    .registerForm {
+        max-width: 360px;
+        min-height: 460px;
+    }
+
+    .getInTouch {
+        max-width: 360px;
+        min-height: 460px;
+    }
+
+    .form {
+        padding: 25px;
+    }
+
+    .form-control label {
+        font-size: 14px;
+    }
+
+    .form-control input {
+        font-size: 13px;
+        padding: 9px;
+    }
+
+    .contact-title {
+        font-size: 32px;
+    }
+
+    .card-label {
+        font-size: 1.1rem;
+    }
+
+    .card-info {
+        font-size: 0.85rem;
+    }
+
+    .card-line {
+        width: 90px;
+    }
+}
+
+/* Breakpoint: 480px */
+@media (max-width: 480px) {
+    .contactheaders h1 {
+        font-size: 36px;
+        margin-top: 20px;
+    }
+
+    .contactheaders h2 {
+        font-size: 18px;
+    }
+
+    .twoFrameConnector {
+        gap: 30px;
+        padding: 20px 15px;
+    }
+
+    .registerForm {
+        max-width: 320px;
+        min-height: 420px;
+        border-radius: 25px;
+    }
+
+    .getInTouch {
+        max-width: 320px;
+        min-height: 420px;
+        border-radius: 25px;
+    }
+
+    .form {
+        padding: 20px 15px;
+    }
+
+    .form-control {
+        margin-bottom: 8px;
+        padding-bottom: 18px;
+    }
+
+    .form-control label {
+        font-size: 13px;
+    }
+
+    .form-control input {
+        font-size: 12px;
+        padding: 8px;
+    }
+
+    .form button {
+        font-size: 18px;
+        padding: 9px;
+    }
+
+    .contact-title {
+        font-size: 28px;
+        margin-bottom: 25px;
+    }
+
+    .card-label {
+        font-size: 18px;
+    }
+
+    .card-info {
+        font-size: 14px;
+    }
+
+    .card-line {
+        width: 80px;
+    }
+
+    .contact-row {
+        margin-bottom: 16px;
+    }
+}
+
+/* Breakpoint: 320px */
+@media (max-width: 320px) {
+    .contactheaders h1 {
+        font-size: 28px;
+        margin-top: 15px;
+    }
+
+    .contactheaders h2 {
+        font-size: 16px;
+    }
+
+    .twoFrameConnector {
+        gap: 20px;
+        padding: 15px 10px;
+    }
+
+    .registerForm {
+        max-width: 280px;
+        min-height: 380px;
+        border-radius: 20px;
+        border-width: 3px;
+    }
+
+    .getInTouch {
+        max-width: 280px;
+        min-height: 380px;
+        border-radius: 20px;
+        border-width: 3px;
+    }
+
+    .form {
+        padding: 18px 12px;
+    }
+
+    .form-control {
+        margin-bottom: 6px;
+        padding-bottom: 15px;
+    }
+
+    .form-control label {
+        font-size: 12px;
+    }
+
+    .form-control input {
+        font-size: 11px;
+        padding: 7px;
+    }
+
+    .form button {
+        font-size: 16px;
+        padding: 9px;
+    }
+
+    .contact-title {
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+
+    .card-label {
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+
+    .card-info {
+        font-size: 13px;
+        margin-bottom: 10px;
+    }
+
+    .card-line {
+        width: 70px;
+    }
+
+    .contact-row {
+        margin-bottom: 18px;
+    }
+}
+
+/* INDEEEEEX */
+@media (max-width: 1024px) {
+  .landing1 {
+    gap: 60px;
+    padding: 0 40px;
+  }
+
+  .transf h1 {
+    font-size: 72px;
+    width: 600px;
+  }
+
+  .transf p {
+    font-size: 28px;
+    width: 520px;
+  }
+
+  .transf {
+    width: 600px;
+    margin-left: 20px;
+    margin-top: 40px;
+  }
+
+  .look,
+  .find2 {
+    width: 220px;
+    height: 65px;
+    font-size: 26px;
+  }
+
+  .find {
+    gap: 25px;
+    margin-left: 20px;
+  }
+
+  .transf1 {
+    gap: 60px;
+  }
+
+  .carousel-container {
+    width: 280px;
+    height: 380px;
+    margin-top: 60px;
+  }
+
+  .carousel-btn {
+    padding: 12px;
+    font-size: 20px;
+  }
+
+  .prev-btn {
+    left: -50px;
+  }
+
+  .next-btn {
+    right: -50px;
+  }
+
+  .club {
+    height: 550px;
+  }
+
+  .club2 h3 {
+    font-size: 72px;
+  }
+
+  .club2 p {
+    font-size: 38px;
+  }
+
+  .club2 a {
+    width: 240px;
+    height: 90px;
+    font-size: 28px;
+  }
+
+  .club2 {
+    top: 120px;
+  }
+
+  .club4 {
+    padding-left: 450px;
+  }
+
+  .landing2 {
+    margin-top: 80px;
+  }
+}
+@media (max-width: 786px) {
+  .landing1 {
+    flex-direction: column;
+    gap: 40px;
+    padding: 0 30px;
+  }
+
+  .transf h1 {
+    font-size: 56px;
+    width: 100%;
+    max-width: 600px;
+  }
+
+  .transf p {
+    font-size: 24px;
+    width: 100%;
+    max-width: 500px;
+  }
+
+  .transf {
+    width: 100%;
+    max-width: 600px;
+    margin-left: 0;
+    margin-top: 30px;
+    align-items: center;
+    text-align: center;
+  }
+
+  .look,
+  .find2 {
+    width: 200px;
+    height: 60px;
+    font-size: 24px;
+  }
+
+  .find {
+    justify-content: center;
+    margin-left: 0;
+    gap: 20px;
+    margin-top: 15px;
+  }
+
+  .transf1 {
+    gap: 40px;
+    width: 100%;
+    align-items: center;
+  }
+
+  .carousel-container {
+    width: 260px;
+    height: 350px;
+    margin-top: 40px;
+  }
+
+  .carousel-btn {
+    padding: 10px;
+    font-size: 18px;
+  }
+
+  .prev-btn {
+    left: -40px;
+  }
+
+  .next-btn {
+    right: -40px;
+  }
+
+  .club {
+    height: 500px;
+  }
+
+  .club2 h3 {
+    font-size: 56px;
+  }
+
+  .club2 p {
+    font-size: 32px;
+  }
+
+  .club2 a {
+    width: 220px;
+    height: 80px;
+    font-size: 26px;
+    margin-top: 30px;
+  }
+
+  .club2 {
+    top: 100px;
+  }
+
+  .club3 img {
+    max-width: 80%;
+    height: auto;
+  }
+
+  .club4 {
+    padding-left: 200px;
+  }
+
+  .landing2 {
+    margin-top: 60px;
+  }
+}
+
+/* ========== BREAKPOINT: 480px ========== */
+@media (max-width: 480px) {
+  .landing1 {
+    gap: 30px;
+    padding: 0 20px;
+  }
+
+  .transf h1 {
+    font-size: 42px;
+    width: 100%;
+  }
+
+  .transf p {
+    font-size: 20px;
+    width: 100%;
+    margin-top: 15px;
+  }
+
+  .transf {
+    max-width: 100%;
+    margin-top: 20px;
+    gap: 15px;
+  }
+
+  .look,
+  .find2 {
+    width: 180px;
+    height: 55px;
+    font-size: 20px;
+  }
+
+  .find {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    margin-top: 10px;
+  }
+
+  .transf1 {
+    gap: 30px;
+  }
+
+  .carousel-container {
+    width: 220px;
+    height: 300px;
+    margin-top: 30px;
+  }
+
+  .carousel-btn {
+    padding: 8px;
+    font-size: 16px;
+  }
+
+  .prev-btn {
+    left: -30px;
+  }
+
+  .next-btn {
+    right: -30px;
+  }
+
+  .club {
+    height: 450px;
+  }
+
+  .club2 h3 {
+    font-size: 42px;
+  }
+
+  .club2 p {
+    font-size: 26px;
+    margin-top: 12px;
+  }
+
+  .club2 a {
+    width: 190px;
+    height: 70px;
+    font-size: 22px;
+    margin-top: 25px;
+  }
+
+  .club2 {
+    top: 80px;
+  }
+
+  .club3 img {
+    max-width: 70%;
+  }
+
+  .club4 {
+    padding-left: 100px;
+  }
+
+  .landing2 {
+    margin-top: 50px;
+  }
+}
+
+/* ========== BREAKPOINT: 320px ========== */
+@media (max-width: 320px) {
+  .landing1 {
+    gap: 20px;
+    padding: 0 15px;
+  }
+
+  .transf h1 {
+    font-size: 32px;
+  }
+
+  .transf p {
+    font-size: 16px;
+    margin-top: 10px;
+  }
+
+  .transf {
+    margin-top: 15px;
+    gap: 12px;
+  }
+
+  .look,
+  .find2 {
+    width: 160px;
+    height: 50px;
+    font-size: 18px;
+  }
+
+  .find {
+    gap: 12px;
+  }
+
+  .transf1 {
+    gap: 25px;
+  }
+
+  .carousel-container {
+    width: 200px;
+    height: 270px;
+    margin-top: 25px;
+  }
+
+  .carousel-btn {
+    padding: 6px;
+    font-size: 14px;
+  }
+
+  .prev-btn {
+    left: -25px;
+  }
+
+  .next-btn {
+    right: -25px;
+  }
+
+  .club {
+    height: 400px;
+  }
+
+  .club2 h3 {
+    font-size: 32px;
+  }
+
+  .club2 p {
+    font-size: 20px;
+    margin-top: 10px;
+  }
+
+  .club2 a {
+    width: 170px;
+    height: 60px;
+    font-size: 20px;
+    margin-top: 20px;
+  }
+
+  .club2 {
+    top: 60px;
+  }
+
+  .club3 img {
+    max-width: 60%;
+  }
+
+  .club4 {
+    padding-left: 50px;
+  }
+
+  .landing2 {
+    margin-top: 40px;
+  }
+}
+/* Responsive adjustments for 1024px and below */
+@media (max-width: 1024px) {
+  
+  /* 1. Reset the pink container height and layout */
+  .footerpink {
+    height: auto;
+    position: relative; /* Changing from absolute for better mobile flow */
+    justify-content: center;
+    padding: 40px 20px;
+    margin-top: 0 !important; /* Overriding the inline style */
+  }
+
+  /* 2. Hide everything except the slogan */
+  .quick_links, 
+  .contact_us, 
+  .reserved {
+    display: none !important;
+  }
+
+  /* 3. Center the slogan and remove large margins */
+  .slogan {
+    margin-left: 0; /* Removing the 90px margin you had */
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* Adjust the footer container to fit the new content */
+  .footerlol {
+    padding-top: 0;
+    height: auto;
+  }
+}
+
+/* dbashvdjhasvd         asdda */
+/* 1024px */
+/* 1024px */
+@media screen and (min-width: 480px) {
+  .login-wrapper {
+    width: 350px;
+  }
+}
+
+/* 768px Breakpoint */
+@media screen and (min-width: 768px) {
+  .login-wrapper {
+    width: 380px;
+  }
+}
+
+/* 1024px Breakpoint */
+@media screen and (min-width: 1024px) {
+  .login-wrapper {
+    width: 420px;
+  }
+}
+
+@media (max-width: 480px) {
+  .login-wrapper {
+    width: 300px;
+    padding: 25px;
+    border-radius: 20px;
+  }
+  .input-group label { font-size: 16px; }
+}
+
+/* Small Mobile (320px) */
+@media (max-width: 320px) {
+  .login-wrapper {
+    width: 260px;
+    padding: 20px;
+  }
+  #login-btn { font-size: 14px; }
+}
