@@ -1033,7 +1033,7 @@ main {
   align-items: center;
   height: 100vh;
   position: absolute;
-  z-index: 10000000;
+  z-index: -10000000;
   margin-top: -730px;
   margin-left: 550px;
 }
