@@ -24,11 +24,9 @@ function prevSlide() {
   currentSlide = (currentSlide - 1 + slides.length) % slides.length;
   updateSlides();
 }
-// ftuyuidrtfyugyiuhsetdrftyguyihuo
 const cookieBtn = document.getElementById("acceptCookies");
 const cookieBanner = document.getElementById("cookieNotlol");
 
-// Only run the code if BOTH elements actually exist in your HTML
 if (cookieBtn && cookieBanner) {
     cookieBtn.addEventListener("click", function() {
         cookieBanner.classList.add("hidden");
@@ -40,7 +38,6 @@ const user = document.getElementById('user');
 const pass = document.getElementById('pass');
 const loginWrapper = document.querySelector('.login-wrapper');
 
-// Only run if all elements exist on the page
 if (loginForm && user && pass && loginWrapper) {
     loginForm.addEventListener('submit', (e) => {  
         e.preventDefault();
@@ -89,8 +86,7 @@ function showLoginSuccess(field) {
         inputGroup.classList.add('valid');
     }
 }
-// scroll to top------------------------------------------------------
-// Get the button:
+// scroll to top-----------------------
 
 let mybutton = document.getElementById("myBtn");
 
@@ -113,40 +109,22 @@ function topFunction() {
 
 // contact page
 // --- CONTACT PAGE LOGIC ---
-const contactForm = document.getElementById('form'); // Make sure ID is 'form' in HTML
+const contactForm = document.getElementById('form'); 
 const username = document.getElementById('username');
 const email = document.getElementById('email');
 const password = document.getElementById('password');
 const password2 = document.getElementById('password2');
-
-// Only run if the form exists on the current page
 if (contactForm) {
     contactForm.addEventListener('submit', function(e) {
         e.preventDefault();
-
-        // 1. Check if fields are empty
         checkRequired([username, email, password, password2]);
-        
-        // 2. Check lengths
+    
         checkLength(username, 3, 15);
         checkLength(password, 6, 25);
-        
-        // 3. Check email format
+  
         checkEmail(email);
-        
-        // 4. Check if passwords match
-        checkPasswordMatch(password, password2);
     });
 }
-
-// Helper: Check if passwords match
-function checkPasswordMatch(input1, input2) {
-    if (input1.value !== input2.value && input2.value !== '') {
-        showError(input2, 'Passwords do not match');
-    }
-}
-
-// Helper: Show error
 function showError(input, message) {
     const formControl = input.parentElement;
     formControl.className = 'form-control error';
@@ -154,13 +132,11 @@ function showError(input, message) {
     if (small) small.innerText = message;
 }
 
-// Helper: Show success
 function showSucces(input) {
     const formControl = input.parentElement;
     formControl.className = 'form-control success';
 }
 
-// Helper: Email Validation
 function checkEmail(input) {
     const re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
     if (re.test(input.value.trim())) {
@@ -169,24 +145,20 @@ function checkEmail(input) {
         showError(input, 'Email is invalid');
     }
 }
-
-// Helper: Required Check
 function checkRequired(inputArr) {
     inputArr.forEach(function(input) {
         if (input && input.value.trim() === '') {
-            showError(input, `${getFieldName(input)} is required`);
+            showError(input, `Question is required`);
         } else if (input) {
             showSucces(input);
         }
     });
 }
-
-// Helper: Length Check
 function checkLength(input, min, max) {
     if (input.value.length < min) {
-        showError(input, `${getFieldName(input)} must be at least ${min} characters`);
+        showError(input, `Phone number is required`);
     } else if (input.value.length > max) {
-        showError(input, `${getFieldName(input)} must be less than ${max} characters`);
+        showError(input, `Phone number is required`);
     } else {
         showSucces(input);
     }
@@ -197,7 +169,7 @@ function getFieldName(input) {
 }
 // -----------api-----------
  document.addEventListener('DOMContentLoaded', () => {
-    const loginForm = document.getElementById('loginForm'); // Now matches HTML
+    const loginForm = document.getElementById('loginForm');
     const loginWrapper = document.getElementById('login-container');
     const profilePage = document.getElementById('profile-page');
     const userDisplay = document.getElementById('user-display');
@@ -205,21 +177,16 @@ function getFieldName(input) {
 
     if (loginForm) {
         loginForm.addEventListener('submit', async (e) => {
-            e.preventDefault(); // Stop page from refreshing
+            e.preventDefault();
 
             loginBtn.innerText = "Logging in...";
 
             try {
-                // 1. Fetch from API
                 const response = await fetch('https://randomuser.me/api/');
                 const data = await response.json();
                 const user = data.results[0];
-
-                // 2. Switch Views
                 loginWrapper.style.display = 'none';
                 profilePage.style.display = 'block';
-
-                // 3. Display User
                 userDisplay.innerHTML = `
                     <div style="text-align: center; color: #5e2b94; font-family: 'Playfair Display', serif;">
                         <img src="${user.picture.large}" style="border-radius: 50%; border: 5px solid #5e2b94; width: 150px;">
